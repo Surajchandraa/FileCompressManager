@@ -1,0 +1,3 @@
+## Project requirement
+- in the given directory if you find files more than a given size ex: 20mb or files older than given days ex:10days
+-compress those files and move in a archive folder
