@@ -18,7 +18,6 @@
 ## Configuration:
 - Edit ***script_config.cfg** to define:
     - **path:** Directory path where files will be managed.
-    - **max_time:** Maximum time (in days) since the last access for file consideration.
     - **size:**  file size for compression (format: [number][unit] - K, M, G). files more than specified will be compressed.
     - **depth:** Depth level for file search within the directory.
     - **archive_path:** Directory path for storing compressed files.

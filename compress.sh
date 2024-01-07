@@ -14,7 +14,7 @@ if [ ! -d "$archive_path" ]; then
     mkdir "$archive_path"
 fi
 
-for i in $(find "$path" -maxdepth "$depth" -type f -size +"$size" -atime +"$max_time"); do
+for i in $(find "$path" -maxdepth "$depth" -type f -size +"$size"); do
     
     if ! file --mime-type -b "$i" | grep -q "gzip"; then
         gzip "$i" || echo "Failed to compress: $i" >&2
